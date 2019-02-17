@@ -9,7 +9,6 @@ gem 'rails', '~> 5.1.6'
 gem 'pg'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
-gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'bcrypt', '~> 3.1.7'
 gem 'attr_encrypted'
@@ -33,6 +32,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-rails'
+  gem 'listen'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

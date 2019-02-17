@@ -1,8 +1,9 @@
-{
-    "entry": "frontend/app.jsx",
+module.exports = {
+    "mode": "development",
+    "entry": "./frontend/app.jsx",
     "output": {
         "path": __dirname+'/app/assets/javascripts',
-        "filename": "[name].[chunkhash:8].js"
+        "filename": "bundle.js"
     },
     "devtool": "source-map",
     "module": {

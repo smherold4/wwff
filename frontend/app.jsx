@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import LandingPage from './components/landing/LandingPage';
+import LandingPage from './components/LandingPage.jsx';
 
 const components = {
   "LandingPage": <LandingPage/>
