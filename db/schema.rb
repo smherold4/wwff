@@ -26,11 +26,14 @@ ActiveRecord::Schema.define(version: 20190218021034) do
   end
 
   create_table "users", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.boolean "admin", default: false, null: false
     t.string "first_name"
     t.string "second_name"
     t.string "last_name"
+    t.string "gender"
     t.string "password_digest"
     t.string "password_reset_code"
+    t.datetime "password_reset_code_sent_at"
     t.string "email"
     t.string "email_verification_code"
     t.datetime "email_verified_at"
@@ -40,7 +43,6 @@ ActiveRecord::Schema.define(version: 20190218021034) do
     t.datetime "last_login_at"
     t.text "signup_ref"
     t.text "signup_source"
-    t.string "gender"
     t.string "time_zone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
